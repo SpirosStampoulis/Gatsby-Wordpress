@@ -8,8 +8,9 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
+        //baseUrl: "practice.codingsrc.com",
         baseUrl: "horseracingbettingusa.com",
-        protocol: "local",
+        protocol: "http",
         restApiRoutePrefix: "wp-json",
 
         hostingWPCOM: false,
@@ -116,6 +117,18 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-source-wordpress-experimental`,
+    //   options: {
+    //     //Your other config...
+    //     auth: {
+    //       htaccess: {
+    //         username: process.env.WORDPRESS_CLIENT_SECRET,
+    //         password: process.env.WORDPRESS_PASSWORD,
+    //       }
+    //     }
+    //   }
+    // },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

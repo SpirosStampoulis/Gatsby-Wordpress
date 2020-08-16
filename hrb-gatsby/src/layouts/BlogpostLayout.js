@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import SEO from "../components/SEO"
+// import SEO from "../components/SEO"
 // import innertext from "innertext"
 const BlogpostLayout = ({ data }) => {
   const post = data.wordpressPost
@@ -31,9 +31,6 @@ export const query = graphql`
       title
       featured_media {
         source_url
-      }
-      categories {
-        name
       }
       excerpt
     }
